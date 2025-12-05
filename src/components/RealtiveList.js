@@ -1,13 +1,13 @@
-export default function RelativeList (){
-    const retlatives = ["Ramesh","Suresh","Suraj","Vinay","Rohit"];
-    return (
-        
-        <ol>
-        {
-            relatives.map((name,index) =>(
-            <li key={`id${index + 1 }`}>{name}</li>
-        ))}
-        </ol>
-        
-    );
+export default function RelativeList() {
+  const relatives = ["Ramesh Uncle", "Sita Aunty", "Vijay Mama", "Kiran Masi"];
+
+  return (
+    <ol key="relativeList">
+      {relatives.map((name, index) => (
+        <li key={`relativeListItem${index + 1}`}>
+          {name}
+        </li>
+      ))}
+    </ol>
+  );
 }
